@@ -1,0 +1,112 @@
+[
+  {
+    "id": "svc-001",
+    "name": "Mudanza local básica",
+    "category": "local",
+    "price": 250000,
+    "distanceKm": 10,
+    "durationHours": 3,
+    "vehicleAssigned": "furgoneta",
+    "active": true
+  },
+  {
+    "id": "svc-002",
+    "name": "Mudanza local premium",
+    "category": "local",
+    "price": 450000,
+    "distanceKm": 20,
+    "durationHours": 5,
+    "vehicleAssigned": "camion_pequeno",
+    "active": true
+  },
+  {
+    "id": "svc-003",
+    "name": "Embalaje profesional oficina",
+    "category": "oficina",
+    "price": 350000,
+    "distanceKm": 15,
+    "durationHours": 4,
+    "vehicleAssigned": "furgoneta",
+    "active": true
+  },
+  {
+    "id": "svc-004",
+    "name": "Mudanza de oficina completa",
+    "category": "oficina",
+    "price": 650000,
+    "distanceKm": 25,
+    "durationHours": 8,
+    "vehicleAssigned": "camion_mediano",
+    "active": true
+  },
+  {
+    "id": "svc-005",
+    "name": "Mudanza nacional intermunicipal",
+    "category": "nacional",
+    "price": 1200000,
+    "distanceKm": 300,
+    "durationHours": 12,
+    "vehicleAssigned": "camion_grande",
+    "active": true
+  },
+  {
+    "id": "svc-006",
+    "name": "Mudanza nacional larga distancia",
+    "category": "nacional",
+    "price": 1800000,
+    "distanceKm": 500,
+    "durationHours": 20,
+    "vehicleAssigned": "camion_grande",
+    "active": true
+  },
+  {
+    "id": "svc-007",
+    "name": "Mudanza express 12h",
+    "category": "express",
+    "price": 2200000,
+    "distanceKm": 50,
+    "durationHours": 12,
+    "vehicleAssigned": "camion_mediano",
+    "active": true
+  },
+  {
+    "id": "svc-008",
+    "name": "Mudanza express 6h",
+    "category": "express",
+    "price": 3400000,
+    "distanceKm": 30,
+    "durationHours": 6,
+    "vehicleAssigned": "camion_pequeno",
+    "active": false
+  },
+  {
+    "id": "svc-009",
+    "name": "Mudanza internacional Europa",
+    "category": "internacional",
+    "price": 3500000,
+    "distanceKm": 8000,
+    "durationHours": 48,
+    "vehicleAssigned": "contenedor",
+    "active": true
+  },
+  {
+    "id": "svc-010",
+    "name": "Mudanza internacional USA",
+    "category": "internacional",
+    "price": 4500000,
+    "distanceKm": 12000,
+    "durationHours": 72,
+    "vehicleAssigned": "contenedor",
+    "active": true
+  },
+  {
+    "id": "svc-011",
+    "name": "Servicio de embalaje local",
+    "category": "local",
+    "price": 200000,
+    "distanceKm": 5,
+    "durationHours": 2,
+    "vehicleAssigned": "furgoneta",
+    "active": false
+  }
+]
