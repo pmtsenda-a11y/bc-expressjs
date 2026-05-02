@@ -4,17 +4,30 @@
 
 import { writeFile, mkdir } from 'fs/promises';
 import { join } from 'path';
+import { fileURLToPath } from 'url';
 import type { Report } from './types.js';
+import { FileWriteError, isApplicationError } from './errors.js';
 
-// TODO: Implementar writeReport
-// Debe:
-// 1. Construir la ruta al directorio output/ usando join() e import.meta.dirname
-// 2. Crear el directorio output/ con mkdir() si no existe (usar la opción { recursive: true })
-// 3. Serializar el reporte con JSON.stringify(report, null, 2) para formato legible
-// 4. Escribir el archivo output/report.json con writeFile
-// 5. Loggear en consola la ruta donde se guardó el reporte
-//
-// Firma esperada:
-// export async function writeReport(report: Report): Promise<void>
-//
-// Nota: mkdir con { recursive: true } no lanza error si el directorio ya existe
+export async function writeReport(report: Report): Promise<void> {
+  const currentDir = fileURLToPath(new URL('.', import.meta.url));
+  const outputDir = join(currentDir, '..', 'output');
+
+  try {
+    await mkdir(outputDir, { recursive: true });
+
+    const reportPath = join(outputDir, 'report.json');
+    await writeFile(reportPath, JSON.stringify(report, null, 2), 'utf-8');
+
+    console.log(`Reporte guardado en ${reportPath}`);
+  } catch (error) {
+    if (isApplicationError(error)) {
+      throw error;
+    }
+
+    if (error instanceof Error) {
+      throw new FileWriteError(`Error escribiendo el reporte: ${error.message}`);
+    }
+
+    throw new FileWriteError('Error desconocido al escribir el reporte');
+  }
+}
