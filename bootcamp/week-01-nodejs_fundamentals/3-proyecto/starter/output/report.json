@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-05-02T16:42:48.226Z",
-  "appliedFilter": "internacional",
+  "generatedAt": "2026-05-02T19:46:40.091Z",
+  "appliedFilter": "local",
   "summary": {
-    "total": 2,
+    "total": 3,
     "active": 2,
-    "inactive": 0,
-    "averagePrice": 4000000,
+    "inactive": 1,
+    "averagePrice": 300000,
     "mostExpensive": {
       "id": "svc-010",
       "name": "Mudanza internacional USA",
@@ -27,30 +27,40 @@
       "active": false
     },
     "serviceCategories": [
-      "internacional"
+      "local"
     ],
-    "totalDistance": 20000
+    "totalDistance": 35
   },
   "items": [
     {
-      "id": "svc-009",
-      "name": "Mudanza internacional Europa",
-      "category": "internacional",
-      "price": 3500000,
-      "distanceKm": 8000,
-      "durationHours": 48,
-      "vehicleAssigned": "contenedor",
+      "id": "svc-001",
+      "name": "Mudanza local básica",
+      "category": "local",
+      "price": 250000,
+      "distanceKm": 10,
+      "durationHours": 3,
+      "vehicleAssigned": "furgoneta",
       "active": true
     },
     {
-      "id": "svc-010",
-      "name": "Mudanza internacional USA",
-      "category": "internacional",
-      "price": 4500000,
-      "distanceKm": 12000,
-      "durationHours": 72,
-      "vehicleAssigned": "contenedor",
+      "id": "svc-002",
+      "name": "Mudanza local premium",
+      "category": "local",
+      "price": 450000,
+      "distanceKm": 20,
+      "durationHours": 5,
+      "vehicleAssigned": "camion_pequeno",
       "active": true
+    },
+    {
+      "id": "svc-011",
+      "name": "Servicio de embalaje local",
+      "category": "local",
+      "price": 200000,
+      "distanceKm": 5,
+      "durationHours": 2,
+      "vehicleAssigned": "furgoneta",
+      "active": false
     }
   ]
 }
