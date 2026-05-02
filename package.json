@@ -1,0 +1,15 @@
+{
+  "name": "semana01-proyecto",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc --noEmit",
+    "start": "tsx src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
